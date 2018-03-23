@@ -24,3 +24,6 @@ To run the application, run: `java -Dfile.encoding=UTF-8 -jar <path-to-jar> impo
 (e.g. `pubmed18n0463.xml.gz` has an ID of 463). `startId` is the first ID to process and `endId` is the last ID (inclusive).
 The application will parse and upload all the XML files in between `startId` and `endId`. `importPubMedXmlAsJson` is just
 the name of the job, and can be omitted now because it's also the default (however that might change in the future).
+
+You can also use `./gradlew bootRun` to run from the source-code, but you'll need to edit the `build.gradle` file to adjust
+the CLI arguments that you normally pass when invoking it as a jar executable.
