@@ -78,7 +78,7 @@ class BatchConfiguration {
                             new DefaultAWSCredentialsProviderChain())
                     .withClientConfiguration(
                             new ClientConfiguration()
-                                    .withRequestTimeout(120_000))
+                                    .withRequestTimeout(90_000))
                     .build();
             bucketName = "pubmed-json";
         }};
